@@ -77,7 +77,7 @@ plugins=(
   kubectl
   kube-ps1
   colored-man-pages
-  #zsh-syntax-highlighting
+  zsh-syntax-highlighting
   oc
 )
 

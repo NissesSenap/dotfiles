@@ -27,12 +27,17 @@ stowit() {
     stow -v -R -t ${usr} ${app}
 }
 
+for app in ${base[@]}; do
+    stowit "${HOME}" $app
+done
+
 echo ""
 echo "Stowing apps for user: ${whoami}"
 
-# install apps available to local users and root
-for app in ${base[@]}; do
-    stowit "${HOME}" $app
+for app in ${useronly[@]}; do
+    if [[ "$(whoami)" != "root" ]]; then
+        stowit "${HOME}" $app
+    fi
 done
 
 echo ""

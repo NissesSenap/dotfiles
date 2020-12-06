@@ -37,8 +37,8 @@ sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 sudo dnf install brave-browser
 
 ## Flatpack
-sudo flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-sudo flatpak install flathub com.visualstudio.code
+flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+flatpak install flathub com.visualstudio.code
 
 ## zsh
 
@@ -47,7 +47,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 
 ## TODO
 
-- Enable me to run sudo without password
+- Turn stuff in to ansible when reasonable
+- Auto install vscode extensions
 
 ### Applications 
 
@@ -55,3 +56,25 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 - manage all your favorite cli:s...
   - kubectl
   - etc
+
+## Commands
+
+### sudoers
+
+sudo sh -c "echo \"$USER ALL=(ALL) NOPASSWD:ALL\" > /etc/sudoers.d/01_me"
+
+### run the script
+
+```bash
+# Remove the .bashrc so we can stow it.
+sudo rm .bashrc
+sudo setup.sh
+rm .bashrc
+setup.sh
+```
+
+### Random command
+
+Commands I never use and need to remember...
+
+git submodule add https://github.com/zsh-users/zsh-syntax-highlighting.git zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
