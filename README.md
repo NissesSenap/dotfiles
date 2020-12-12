@@ -67,8 +67,15 @@ sudo dnf install brave-browser
 ## Flatpack
 
 ```bash
+# vscode
 flatpak remote-add --user --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub com.visualstudio.code
+
+# slack
+flatpak install flathub com.slack.Slack
+
+# spotify
+flatpak install flathub com.spotify.Client
 ```
 
 ## termite
