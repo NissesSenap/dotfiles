@@ -1,0 +1,19 @@
+---
+# vars file for laptop
+
+# util-linux-user makes it possible to run chsh -s $(which zsh)
+# to change default shell to zsh
+
+fedoraPackages:
+- vim-enhanced
+- stow
+- ansible
+- zsh
+- util-linux-user
+- direnv
+- kubernetes-client
+
+flatpacks:
+- com.visualstudio.code
+- com.slack.Slack
+- com.spotify.Client

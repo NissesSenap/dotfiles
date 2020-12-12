@@ -1,0 +1,7 @@
+    - name: Copy MOTD into place
+      copy:
+        dest: /etc/X11/xorg.conf.d/20-intelgpu.conf
+        src: xorg.conf.d/20-intelgpu.conf
+        owner: root
+        group: root
+        mode: 0644

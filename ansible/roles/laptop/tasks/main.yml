@@ -1,0 +1,11 @@
+---
+# tasks file for laptop
+
+- include_tasks: variables.yml
+
+# Setup/install tasks.
+- include_tasks: setup-RedHat.yml
+  when: ansible_os_family == 'RedHat'
+
+# Manage x11 files
+- include_tasks: x11-settings.yml
