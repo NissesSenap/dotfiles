@@ -16,6 +16,7 @@ useronly=(
     local
     vim
     termite
+    vscode
 )
 
 # run the stow command for the passed in directory ($2) in location $1
