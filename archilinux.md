@@ -1,7 +1,7 @@
 # arch
 
 ## Packages
-sudo pacman -Sy fakeroot binutils go make gcc git stow vim termite code patch
+sudo pacman -Sy fakeroot binutils go make gcc git stow vim termite code patch ansible
 
 Yay makes it easier to install AUR packages
 

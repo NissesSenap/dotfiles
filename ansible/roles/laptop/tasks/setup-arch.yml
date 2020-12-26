@@ -1,0 +1,5 @@
+---
+- name: Install arch packages
+  community.general.pacman:
+    name: '{{ archPackages }}'
+    state: present

@@ -7,6 +7,10 @@
 - include_tasks: setup-RedHat.yml
   when: ansible_os_family == 'RedHat'
 
+# arch packages
+- include_tasks: setup-arch.yml
+  when: ansible_os_family == 'Archlinux'
+
 # Manage x11 files
 - include_tasks: x11-settings.yml
   when: ansible_os_family == 'RedHat'

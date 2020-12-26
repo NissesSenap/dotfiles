@@ -17,3 +17,18 @@ flatpacks:
 - com.visualstudio.code
 - com.slack.Slack
 - com.spotify.Client
+
+# arch-linux
+
+archPackages:
+- fakeroot
+- binutils
+- go
+- make
+- gcc
+- git
+- stow
+- vim
+- termite
+- code
+- patch
