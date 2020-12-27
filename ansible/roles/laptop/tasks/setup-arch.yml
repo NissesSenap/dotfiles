@@ -3,3 +3,30 @@
   community.general.pacman:
     name: '{{ archPackages }}'
     state: present
+
+- name: Create aur_builder user
+  user:
+    name: "{{ aur_user }}"
+    group: wheel
+
+- name: Give aur_build pacman access
+  lineinfile:
+    path: /etc/sudoers.d/11-install-{{ aur_user }}
+    line: '{{ aur_user }} ALL=(ALL) NOPASSWD: /usr/bin/pacman'
+    create: yes
+    validate: 'visudo -cf %s'
+
+- name: Installing yay
+  become: true
+  become_user: "{{ aur_user }}"
+  aur:
+    name: yay
+    use: makepkg
+    state: present
+
+- name: Install aur packages
+  aur:
+    use: yay
+    name:
+      - slack-desktop
+      - direnv
