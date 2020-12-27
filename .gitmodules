@@ -4,3 +4,6 @@
 [submodule "zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
 	path = zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "ansible/library/ansible-aur"]
+	path = ansible/library/ansible-aur
+	url = https://github.com/kewlfft/ansible-aur.git
