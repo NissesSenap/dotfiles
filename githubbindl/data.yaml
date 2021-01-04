@@ -1,0 +1,27 @@
+---
+# githubAPIkey: myAPIkey
+httpTimeout: 5
+httpInsecure: false
+saveLocation: /tmp/tkn-210102
+
+bins:
+  - cli: tkn
+    owner: tektoncd
+    repo: cli
+    match: Linux_x86_64
+  - cli: conftest
+    owner: open-policy-agent
+    repo: conftest
+    match: Linux_x86_64
+  - cli: argocd
+    owner: argoproj
+    repo: argo-cd
+    match: linux-amd64
+  - cli: istioctl
+    owner: istio
+    repo: istio
+    match: linux-amd64
+  - cli: helm
+    nonGithubURL: https://get.helm.sh/helm-v3.4.2-linux-amd64.tar.gz
+  - cli: terraform
+    nonGithubURL: https://releases.hashicorp.com/terraform/0.14.3/terraform_0.14.3_linux_amd64.zip
