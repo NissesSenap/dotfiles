@@ -5,12 +5,26 @@ This is a excellent blog if you also want to get [started](https://writingco.de/
 
 Then I add some ansible sprincle on the top
 
+## submodules
+
+git submodule update --init --recursive
+
 ## Using ansible
 
 ### Fedora
 
 ```bash
 dnf install ansible
+
+# Needed for flatpack config
+ansible-galaxy collection install community.general
+
+```
+
+### Arche
+
+```bash
+pacman -S ansible
 
 # Needed for flatpack config
 ansible-galaxy collection install community.general

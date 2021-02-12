@@ -20,3 +20,19 @@ makepkg -si
 
 Found a simple role for [yay](https://github.com/jonsible/yay) but it was so small
 so there was no reason to just not take the code instead of creating a seperate role.
+
+## gnome
+
+Aka show descktop, need to fix script for it...
+Think this was default on fedora.
+
+```bash
+# Exists by default but no shortcut, this will override a default value
+Hide all normal windows
+super + d
+
+
+open-filemanager
+xdg-open .
+super + e
+```
