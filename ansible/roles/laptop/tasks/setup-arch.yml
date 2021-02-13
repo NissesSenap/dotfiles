@@ -1,7 +1,7 @@
 ---
 - name: Install arch packages
   community.general.pacman:
-    name: '{{ archPackages }}'
+    name: "{{ archPackages }}"
     state: present
 
 - name: Create aur_builder user
@@ -11,10 +11,9 @@
 
 - name: Give aur_build pacman access
   lineinfile:
-    path: /etc/sudoers.d/11-install-{{ aur_user }}
-    line: '{{ aur_user }} ALL=(ALL) NOPASSWD: /usr/bin/pacman'
-    create: yes
-    validate: 'visudo -cf %s'
+    path: /etc/sudoers
+    line: "{{ aur_user }} ALL=(ALL) NOPASSWD: /usr/bin/pacman"
+    validate: "visudo -cf %s"
 
 - name: Installing yay
   become: true
@@ -31,3 +30,5 @@
     name:
       - slack-desktop
       - direnv
+      - google-chrome
+      - teams
