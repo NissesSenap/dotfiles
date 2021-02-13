@@ -25,6 +25,7 @@
     state: present
 
 - name: Install aur packages
+  become_user: aur_builder
   aur:
     use: yay
     name:

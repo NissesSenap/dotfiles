@@ -32,3 +32,4 @@ archPackages:
 - termite
 - code
 - patch
+- kubectl

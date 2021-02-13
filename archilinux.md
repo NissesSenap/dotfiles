@@ -36,3 +36,9 @@ open-filemanager
 xdg-open .
 super + e
 ```
+
+## locale issues
+
+For some reason I got some locale issue last time i did a install.
+
+sudo echo en_US.UTF-8 UTF-8 > /etc/locale.gen && locale-gen

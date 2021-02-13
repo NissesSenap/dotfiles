@@ -9,7 +9,7 @@ Then I add some ansible sprincle on the top
 
 git submodule update --init --recursive
 
-## Using ansible
+## Install
 
 ### Fedora
 
@@ -21,17 +21,7 @@ ansible-galaxy collection install community.general
 
 ```
 
-### Arche
-
-```bash
-pacman -S ansible
-
-# Needed for flatpack config
-ansible-galaxy collection install community.general
-
-```
-
-### termite
+#### termite
 
 Copr isn't supported in ansible...
 
@@ -40,21 +30,35 @@ dnf copr enable skidnik/termite
 dnf install termite
 ```
 
+
+### Arche
+
+```bash
+pacman -S ansible
+```
+
 ### sudoers
 
-sudo sh -c "echo \"$USER ALL=(ALL) NOPASSWD:ALL\" > /etc/sudoers.d/01_me"
+sudo sh -c "echo \"$USER ALL=(ALL) NOPASSWD:ALL\" >> /etc/sudoers"
 
 ### Run playbook
 
 ansible-playbook playbook.yml
 
+
+### zsh
+
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended`
+
 ### run the script
+
+Run code before starting the script. Else we will get intresting linking stuff.
 
 ```bash
 # Remove the .bashrc so we can stow it.
 sudo rm .bashrc
 sudo setup.sh
-rm .bashrc
+rm .bashrc .zshrc
 setup.sh
 ```
 
@@ -106,10 +110,6 @@ sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.co
 sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc
 sudo dnf install brave-browser
 ```
-
-## zsh
-
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended`
 
 ## TODO
 
