@@ -1,15 +1,15 @@
 ---
 # githubAPIkey: myAPIkey
-httpTimeout: 5
+httpTimeout: 30
 httpInsecure: false
-saveLocation: /tmp/tkn-210102
+saveLocation: /home/edvin/.local/bin/
 
 bins:
   - cli: tkn
     owner: tektoncd
     repo: cli
     match: Linux_x86_64
-    completionLocation: /tmp/tkn-completion.sh
+    completionLocation: /home/edvin/.local/completion/tkn-completion.sh
     completionArgs:
       - completion
       - zsh
@@ -31,7 +31,7 @@ bins:
     match: linux_amd64
   - cli: helm
     nonGithubURL: https://get.helm.sh/helm-v3.4.2-linux-amd64.tar.gz
-    completionLocation: /tmp/helm-completion.sh
+    completionLocation: /home/edvin/.local/completion/helm-completion.sh
     completionArgs:
       - completion
       - zsh

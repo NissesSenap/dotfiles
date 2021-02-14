@@ -185,4 +185,8 @@ export PATH="~/.local/bin:$PATH"
 eval "$(direnv hook zsh)"
 
 autoload -U +X bashcompinit && bashcompinit
+autoload -U compinit; compinit
 #complete -o nospace -C /usr/local/bin/odo odo
+
+source ~/.local/completion/tkn-completion.sh
+source ~/.local/completion/helm-completion.sh

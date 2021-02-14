@@ -13,7 +13,7 @@ base=(
 useronly=(
     git
     zsh
-    local
+    completion
     vim
     termite
     vscode

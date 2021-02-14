@@ -9,3 +9,11 @@
     mode: "0755"
     owner: "{{ user }}"
     group: "{{ user }}"
+
+- name: Create .local/bin
+  ansible.builtin.file:
+    path: "{{ home }}/.local/bin"
+    state: directory
+    mode: "0755"
+    owner: "{{ user }}"
+    group: "{{ user }}"
