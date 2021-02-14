@@ -14,3 +14,6 @@
 # Manage x11 files
 - include_tasks: x11-settings.yml
   when: ansible_os_family == 'RedHat'
+
+# General stuff
+- include_tasks: general.yml

@@ -1,5 +1,8 @@
 ---
 - hosts: localhost
   become: yes
+  vars:
+    user: "{{ lookup('env', 'USER') }}"
+    home: "{{ lookup('env', 'HOME') }}"
   roles:
     - laptop

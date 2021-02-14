@@ -1,0 +1,11 @@
+- name: debug user
+  debug:
+    msg: "The user is {{ user }}"
+
+- name: Create cdg
+  ansible.builtin.file:
+    path: "{{ home }}/go/src/github.com/NissesSenap"
+    state: directory
+    mode: "0755"
+    owner: "{{ user }}"
+    group: "{{ user }}"
