@@ -5,31 +5,34 @@
 # to change default shell to zsh
 
 fedoraPackages:
-- vim-enhanced
-- stow
-- ansible
-- zsh
-- util-linux-user
-- direnv
-- kubernetes-client
+  - vim-enhanced
+  - stow
+  - ansible
+  - zsh
+  - util-linux-user
+  - direnv
+  - kubernetes-client
 
 flatpacks:
-- com.visualstudio.code
-- com.slack.Slack
-- com.spotify.Client
+  - com.visualstudio.code
+  - com.slack.Slack
+  - com.spotify.Client
 
 # arch-linux
 
 archPackages:
-- fakeroot
-- binutils
-- go
-- make
-- gcc
-- git
-- stow
-- vim
-- termite
-- code
-- patch
-- kubectl
+  - fakeroot
+  - binutils
+  - go
+  - make
+  - gcc
+  - git
+  - stow
+  - vim
+  - termite
+  - code
+  - patch
+  - cmake
+  - glib2
+  - pkg-config
+  - kubectl
