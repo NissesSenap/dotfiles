@@ -36,3 +36,4 @@ archPackages:
   - glib2
   - pkg-config
   - kubectl
+  - gnome-shell-extension-pop-shell
