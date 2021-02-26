@@ -37,3 +37,4 @@ archPackages:
   - pkg-config
   - kubectl
   - gnome-shell-extension-pop-shell
+  - pass
