@@ -3,3 +3,5 @@
 # Please adapt and uncomment the following lines:
 	name = Edvin Norling
 	email = edvin.norling@gmail.com
+[init]
+	defaultBranch = main
