@@ -29,6 +29,10 @@ bins:
     owner: fluxcd
     repo: flux
     match: linux_amd64
+  - cli: kustomize
+    owner: kubernetes-sigs
+    repo: kustomize
+    match: linux_amd64
   - cli: helm
     nonGithubURL: https://get.helm.sh/helm-v3.4.2-linux-amd64.tar.gz
     completionLocation: /home/edvin/.local/completion/helm-completion.sh
