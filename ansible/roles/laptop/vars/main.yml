@@ -39,3 +39,5 @@ archPackages:
   - gnome-shell-extension-pop-shell
   - pass
   - browserpass-firefox
+  - libgit2
+
