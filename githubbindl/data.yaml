@@ -33,6 +33,10 @@ bins:
     owner: kubernetes-sigs
     repo: kustomize
     match: linux_amd64
+    completionLocation: /home/edvin/.local/completion/kustomize-completion.sh
+    completionArgs:
+      - completion
+      - zsh
   - cli: helm
     nonGithubURL: https://get.helm.sh/helm-v3.4.2-linux-amd64.tar.gz
     completionLocation: /home/edvin/.local/completion/helm-completion.sh
