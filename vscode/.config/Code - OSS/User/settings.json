@@ -1,7 +1,7 @@
 {
-    "window.zoomLevel": 0,
     "editor.formatOnSave": true,
     "python.formatting.provider": "black",
     "explorer.confirmDelete": false,
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "vim.useCtrlKeys": false
 }
