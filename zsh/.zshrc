@@ -79,6 +79,7 @@ plugins=(
   colored-man-pages
   zsh-syntax-highlighting
   oc
+  terraform
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -138,7 +139,7 @@ export SPACESHIP_PROMPT_ORDER=(
     # dotnet        # .NET section
     # ember         # Ember.js section
     kubectl        # Kubectl context section
-    # terraform     # Terraform workspace section
+    terraform     # Terraform workspace section
     # exec_time     # Execution time
     line_sep      # Line break
     # battery       # Battery level and status
