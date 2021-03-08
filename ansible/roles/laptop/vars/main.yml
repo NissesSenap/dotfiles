@@ -40,4 +40,4 @@ archPackages:
   - pass
   - browserpass-firefox
   - libgit2
-
+  - docker

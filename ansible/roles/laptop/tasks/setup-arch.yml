@@ -4,6 +4,11 @@
     name: "{{ archPackages }}"
     state: present
 
+- name: Enable service docker and ensure it is not masked
+  ansible.builtin.systemd:
+    name: docker
+    enabled: yes
+
 - name: Create aur_builder user
   user:
     name: "{{ aur_user }}"
