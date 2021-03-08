@@ -41,3 +41,5 @@ archPackages:
   - browserpass-firefox
   - libgit2
   - docker
+  - kubens
+  - kubectx
