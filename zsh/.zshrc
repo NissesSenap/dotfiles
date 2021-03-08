@@ -178,6 +178,10 @@ export PATH="~/.crc/bin:$PATH"
 # PYTHON bin path
 export PATH="~/.local/bin:$PATH"
 
+# kubernetes krew
+
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
 # source tkn zsh completion
 #source ~/.local/completion/tekton.sh
 
