@@ -78,7 +78,6 @@ plugins=(
   kube-ps1
   colored-man-pages
   zsh-syntax-highlighting
-  oc
   terraform
 )
 

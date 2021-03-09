@@ -25,14 +25,14 @@ bins:
     owner: istio
     repo: istio
     match: linux-amd64
-  - cli: fluxctl
-    owner: fluxcd
-    repo: flux
-    match: linux_amd64
   - cli: kind
     owner: kubernetes-sigs
     repo: kind
     match: linux-amd64
+  - cli: tflint
+    owner: terraform-linters
+    repo: tflint
+    match: linux_amd64
   - cli: kustomize
     owner: kubernetes-sigs
     repo: kustomize

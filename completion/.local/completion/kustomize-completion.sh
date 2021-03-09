@@ -85,7 +85,7 @@ function _kustomize_build {
   _arguments \
     '--allow-id-changes[enable changes to a resourceId]' \
     '--enable-alpha-plugins[enable kustomize plugins]' \
-    '--enable-exec[enable support for exec functions -- note: exec functions run arbitrary code -- do not use for untrusted configs!!! (Alpha)]' \
+    '--enable-exec[enable support for exec functions (raw executables); do not use for untrusted configs! (Alpha)]' \
     '--enable-managedby-label[enable adding app.kubernetes.io/managed-by]' \
     '--enable-star[enable support for starlark functions. (Alpha)]' \
     '(*-e *--env)'{\*-e,\*--env}'[a list of environment variables to be used by functions]:' \

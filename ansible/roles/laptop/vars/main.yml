@@ -43,3 +43,5 @@ archPackages:
   - docker
   - kubens
   - kubectx
+  - net-tools
+
