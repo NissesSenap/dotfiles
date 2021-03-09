@@ -44,4 +44,5 @@ archPackages:
   - kubens
   - kubectx
   - net-tools
+  - jq
 
