@@ -45,4 +45,6 @@ archPackages:
   - kubectx
   - net-tools
   - jq
+  - mtpaint
+  - yarn
 
