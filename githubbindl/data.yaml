@@ -33,6 +33,10 @@ bins:
     owner: terraform-linters
     repo: tflint
     match: linux_amd64
+  - cli: terraform-docs
+    owner: terraform-docs
+    repo: terraform-docs
+    match: linux-amd64
   - cli: kustomize
     owner: kubernetes-sigs
     repo: kustomize
@@ -47,5 +51,4 @@ bins:
     completionArgs:
       - completion
       - zsh
-  - cli: terraform
-    nonGithubURL: https://releases.hashicorp.com/terraform/0.14.3/terraform_0.14.3_linux_amd64.zip
+
