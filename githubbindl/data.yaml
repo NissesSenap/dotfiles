@@ -45,6 +45,10 @@ bins:
     completionArgs:
       - completion
       - zsh
+  - cli: kubebuilder
+    owner: kubernetes-sigs
+    repo: kubebuilder
+    match: linux_amd64
   - cli: helm
     nonGithubURL: https://get.helm.sh/helm-v3.4.2-linux-amd64.tar.gz
     completionLocation: /home/edvin/.local/completion/helm-completion.sh
