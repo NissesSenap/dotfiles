@@ -3,6 +3,7 @@
 httpTimeout: 30
 httpInsecure: false
 saveLocation: /home/edvin/.local/bin/
+maxFileSize: 209715200
 
 bins:
   - cli: tkn
