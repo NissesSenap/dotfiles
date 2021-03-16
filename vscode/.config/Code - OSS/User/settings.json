@@ -3,5 +3,12 @@
     "python.formatting.provider": "black",
     "explorer.confirmDelete": false,
     "files.trimTrailingWhitespace": true,
-    "vim.useCtrlKeys": false
+    "vim.useCtrlKeys": false,
+    "cSpell.userWords": [
+        "gitops",
+        "kubernetes",
+        "thanos",
+        "xenit"
+    ],
+    "explorer.confirmDragAndDrop": false
 }
