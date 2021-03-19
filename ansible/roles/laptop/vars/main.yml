@@ -47,4 +47,5 @@ archPackages:
   - jq
   - mtpaint
   - yarn
+  - dos2unix
 
