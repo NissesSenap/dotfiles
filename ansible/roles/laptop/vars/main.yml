@@ -48,4 +48,5 @@ archPackages:
   - mtpaint
   - yarn
   - dos2unix
+  - extra/intltool
 

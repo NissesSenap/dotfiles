@@ -46,6 +46,10 @@ bins:
     completionArgs:
       - completion
       - zsh
+  - cli: flux
+    owner: fluxcd
+    repo: flux2
+    match: linux_amd64
   - cli: kubebuilder
     owner: kubernetes-sigs
     repo: kubebuilder
