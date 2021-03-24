@@ -1,4 +1,4 @@
----
+taq--
 # githubAPIkey: myAPIkey
 httpTimeout: 30
 httpInsecure: false
@@ -50,6 +50,10 @@ bins:
     owner: fluxcd
     repo: flux2
     match: linux_amd64
+    completionLocation: /home/edvin/.local/completion/flux-completion.sh
+    completionArgs:
+      - completion
+      - zsh
   - cli: kubebuilder
     owner: kubernetes-sigs
     repo: kubebuilder
