@@ -102,6 +102,10 @@ gsettings set $custom_kbd:$kbd_path binding $binding
 gsettings set $custom_kbd:$kbd_path command $action
 ```
 
+### Disable hot corners
+
+gsettings set org.gnome.desktop.interface enable-hot-corners false
+
 ## Brave browser
 
 ```bash

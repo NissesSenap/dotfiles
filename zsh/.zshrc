@@ -76,6 +76,7 @@ plugins=(
   git
   kubectl
   kube-ps1
+  history-substring-search
   colored-man-pages
   zsh-syntax-highlighting
   terraform

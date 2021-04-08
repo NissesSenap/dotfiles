@@ -6,9 +6,12 @@
     "vim.useCtrlKeys": false,
     "cSpell.userWords": [
         "gitops",
+        "grafana",
         "kubernetes",
         "thanos",
         "xenit"
     ],
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "go.toolsManagement.autoUpdate": true,
+    "window.zoomLevel": 1
 }
