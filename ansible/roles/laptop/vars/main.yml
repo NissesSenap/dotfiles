@@ -49,4 +49,4 @@ archPackages:
   - yarn
   - dos2unix
   - extra/intltool
-
+  - extra/bind
