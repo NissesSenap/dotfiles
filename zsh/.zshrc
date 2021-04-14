@@ -162,6 +162,7 @@ export EDITOR=vim
 # My aliases
 alias cdp="cd ~/projects"
 alias cdg="cd ~/go/src/github.com/NissesSenap"
+alias iw="init-workspace"
 
 #Yarn
 PATH="$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin"
@@ -183,6 +184,40 @@ export PATH="~/.local/bin:$PATH"
 # kubernetes krew
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+# For more info see: https://github.com/XenitAB/xenit-computer-configuration/tree/master/configuration
+# If KUBECONFIG environment variable is defined, make sure az aks get-credentials uses it
+az() {
+    if [[ $1 == "aks" && $2 == "get-credentials" ]]; then
+        if [[ ${KUBECONFIG} != "" ]]; then
+            command az $@ --file ${KUBECONFIG}
+        else
+            command az $@
+        fi
+    else
+        command az $@
+    fi
+}
+
+# init workspace
+init-workspace() {
+    curr_path=$(pwd)
+    new_path=$(realpath ~/projects/xenit/$1)
+
+    if [[ ! $curr_path =~ $new_path ]]; then
+        ~/projects/xenit/$1
+    fi
+}
+
+# Create Workspace function
+function create-workspace() {
+    mkdir -p ~/projects/xenit/$1/.ssh
+    cd ~/projects/xenit/$1/.ssh
+    ssh-keygen -b 4096 -t rsa -C $1 -f $1_id_rsa
+    cp ~/.create_workspace_envrc ~/projects/xenit/$1/.envrc
+    direnv allow ~/projects/xenit/$1/.envrc
+    cd ~/projects/xenit/$1
+}
 
 # source tkn zsh completion
 #source ~/.local/completion/tekton.sh
