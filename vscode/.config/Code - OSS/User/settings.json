@@ -5,13 +5,17 @@
     "files.trimTrailingWhitespace": true,
     "vim.useCtrlKeys": false,
     "cSpell.userWords": [
+        "falco",
         "gitops",
         "grafana",
+        "kubectl",
         "kubernetes",
+        "minikube",
+        "tekton",
         "thanos",
         "xenit"
     ],
     "explorer.confirmDragAndDrop": false,
     "go.toolsManagement.autoUpdate": true,
-    "window.zoomLevel": 1
+    "window.zoomLevel": 1,
 }
