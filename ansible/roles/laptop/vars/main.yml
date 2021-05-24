@@ -50,3 +50,5 @@ archPackages:
   - dos2unix
   - extra/intltool
   - extra/bind
+  - gnupg
+  - sops
