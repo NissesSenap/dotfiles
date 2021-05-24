@@ -188,7 +188,7 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # kubebuilder
 
-export PATH="$PATH:/usr/local/kubebuilder/bin"
+export PATH="/usr/local/kubebuilder/bin:$PATH"
 # For more info see: https://github.com/XenitAB/xenit-computer-configuration/tree/master/configuration
 # If KUBECONFIG environment variable is defined, make sure az aks get-credentials uses it
 az() {
