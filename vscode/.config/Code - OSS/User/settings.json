@@ -17,4 +17,9 @@
     ],
     "explorer.confirmDragAndDrop": false,
     "go.toolsManagement.autoUpdate": true,
+    "redhat.telemetry.enabled": false,
+    "terminal.integrated.tabs.enabled": true,
+    "files.associations": {
+        "./ci/*": "azure-pipelines"
+    },
 }
