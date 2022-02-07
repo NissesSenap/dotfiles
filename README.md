@@ -141,6 +141,19 @@ cat vscode-extensions.list | xargs -L 1 code --install-extension
   - kubectl
   - etc
 
+## Firmware updates
+
+Remember to update firmware from time to time. Check out if you have access to use this.
+
+[fwupd devices](https://fwupd.org/lvfs/devices/)
+
+```shell
+sudo fwupdmgr refresh
+fwupdmgr get-devices
+fwupdmgr get-updates
+sudo fwupdmgr update
+```
+
 ## Commands
 
 ### Random command
