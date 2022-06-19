@@ -190,3 +190,11 @@ Install the gnome extensions package to easily configure the material shell.
 ### Future
 
 A future option might be: [https://regolith-desktop.com/](https://github.com/paperwm/PaperWM) or [https://github.com/paperwm/PaperWM](https://github.com/paperwm/PaperWM).
+
+## Kind
+
+To run kind on podman:
+
+```shell
+KIND_EXPERIMENTAL_PROVIDER=podman kind create cluster
+```

@@ -15,6 +15,7 @@ fedoraPackages:
   - codium
   - termite
   - golang
+  - podman-docker # it's a simple alias for docker
 
 flatpacks:
   - com.slack.Slack
