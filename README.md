@@ -143,10 +143,20 @@ cat vscode-extensions.list | xargs -L 1 codium --install-extension
 
 ### Applications
 
-- instal golang
 - manage all your favorite cli:s...
   - kubectl
   - etc
+
+I have created a repo to automatically download the latest releases of binaries from github called [gitHubBinDl](https://github.com/NissesSenap/gitHubBinDl/).
+I haven't updated in a long time so these commands probably is correct.
+
+```shell
+cd ~/.local/bin
+wget https://github.com/NissesSenap/gitHubBinDl/releases/download/v0.2.0/githubbindl_linux_amd64
+mv githubbindl_linux_amd64 githubbindl
+chmod 755 githubbindl
+# From the dotfiles folder
+```
 
 ## Firmware updates
 
