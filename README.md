@@ -43,16 +43,22 @@ sudo pacman -S ansible
 
 sudo sh -c "echo \"$USER ALL=(ALL) NOPASSWD:ALL\" >> /etc/sudoers"
 
-### Run playbook
-
-ansible-playbook playbook.yml
-
-
 ### zsh
+
+Run before ansible
 
 ```shell
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 ```
+
+### Run playbook
+
+```shell
+ansible-playbook playbook.yml
+```
+
+The ansible script will install lots of good tools.
+It will also set ZSH as your default shell. Remeber to login and out.
 
 ### run the script
 

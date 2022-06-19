@@ -17,3 +17,14 @@
     mode: "0755"
     owner: "{{ user }}"
     group: "{{ user }}"
+
+- name: Stat zsh path
+  stat:
+    path: /usr/bin/zsh
+  register: zsh_path
+
+- name: Set default shell to zsh
+  user:
+    name: "{{ user }}"
+    shell: /usr/bin/zsh
+  when: zsh_path.stat.exists
