@@ -16,6 +16,8 @@ git submodule update --init --recursive
 ```bash
 sudo dnf install ansible
 
+# Needed to refresh flathub repo
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 # Needed for flatpack config
 ansible-galaxy collection install community.general
 
@@ -34,7 +36,7 @@ sudo dnf install termite
 ### Arche
 
 ```bash
-pacman -S ansible
+sudo pacman -S ansible
 ```
 
 ### sudoers
@@ -162,4 +164,6 @@ sudo fwupdmgr update
 
 Commands I never use and need to remember...
 
-`git submodule add https://github.com/zsh-users/zsh-syntax-highlighting.git zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting`
+```shell
+git submodule add https://github.com/zsh-users/zsh-syntax-highlighting.git zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+```
