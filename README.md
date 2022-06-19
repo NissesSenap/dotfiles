@@ -14,7 +14,7 @@ git submodule update --init --recursive
 ### Fedora
 
 ```bash
-dnf install ansible
+sudo dnf install ansible
 
 # Needed for flatpack config
 ansible-galaxy collection install community.general
@@ -26,8 +26,8 @@ ansible-galaxy collection install community.general
 Copr isn't supported in ansible...
 
 ```bash
-dnf copr enable skidnik/termite
-dnf install termite
+sudo dnf copr enable skidnik/termite
+sudo dnf install termite
 ```
 
 
@@ -48,7 +48,9 @@ ansible-playbook playbook.yml
 
 ### zsh
 
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended`
+```shell
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+```
 
 ### run the script
 
