@@ -1,9 +1,4 @@
 ---
-- name: Install packages
-  dnf:
-    name: '{{ fedoraPackages }}'
-    state: present
-
 - name: Add general flathub
   community.general.flatpak_remote:
     name: flathub
@@ -16,3 +11,23 @@
     state: present
     method: system
   with_items: "{{ flatpacks }}"
+
+# Install codium aka vscode oss repo
+- name: codium gpg
+  rpm_key:
+    key: https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
+    state: present
+
+- name: codium repo
+  yum_repository:
+    name: vscodium.repo
+    description: VS codium aka vscode oss
+    baseurl: https://download.vscodium.com/rpms/
+    gpgcheck: true
+    gpgkey: https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
+
+# Install packages
+- name: Install packages
+  dnf:
+    name: '{{ fedoraPackages }}'
+    state: present

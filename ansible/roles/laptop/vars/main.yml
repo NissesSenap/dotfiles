@@ -12,9 +12,9 @@ fedoraPackages:
   - util-linux-user
   - direnv
   - kubernetes-client
+  - codium
 
 flatpacks:
-  - com.visualstudio.code
   - com.slack.Slack
   - com.spotify.Client
 
