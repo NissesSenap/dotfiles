@@ -180,3 +180,13 @@ Commands I never use and need to remember...
 ```shell
 git submodule add https://github.com/zsh-users/zsh-syntax-highlighting.git zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 ```
+
+## Shell
+
+I personally use [material shell](https://material-shell.com/) which is a gnome [extension](https://extensions.gnome.org/extension/3357/material-shell/).
+
+Install the gnome extensions package to easily configure the material shell.
+
+### Future
+
+A future option might be: [https://regolith-desktop.com/](https://github.com/paperwm/PaperWM) or [https://github.com/paperwm/PaperWM](https://github.com/paperwm/PaperWM).
