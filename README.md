@@ -25,13 +25,13 @@ ansible-galaxy collection install community.general
 
 #### termite
 
-Copr isn't supported in ansible...
+Copr is now supported by ansible and termite is installed automatically.
+Earlier you had to write.
 
 ```bash
 sudo dnf copr enable skidnik/termite
 sudo dnf install termite
 ```
-
 
 ### Arche
 
@@ -130,7 +130,6 @@ sudo dnf install brave-browser
 - Turn stuff in to ansible when reasonable
 - Auto install vscode extensions
 
-
 ### VScode
 
 There is today no easy way to manage extensions using git but there is a sync-option that is in preview but i don't want to use it...
@@ -140,8 +139,8 @@ Instead my plan is to write a simple script that I will run from time to time to
 # Create the backup
 code --list-extensions > vscode-extensions.list
 # To install on a new client
-cat vscode-extensions.list | xargs -L 1 code --install-extension
-
+cat vscode-extensions.list | xargs -L 1 codium --install-extension
+# It might have to say code or codium depending on os.
 ```
 
 ### Applications

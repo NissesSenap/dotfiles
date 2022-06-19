@@ -12,6 +12,11 @@
     method: system
   with_items: "{{ flatpacks }}"
 
+# Setup termite repo
+- name: Enable project Test of the user schlupov
+  community.general.copr:
+    name: skidnik/termite
+
 # Install codium aka vscode oss repo
 - name: codium gpg
   rpm_key:
