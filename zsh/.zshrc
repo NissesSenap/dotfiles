@@ -178,10 +178,10 @@ export PATH=$PATH:$HOME/bin:$GOPATH/bin
 export GO111MODULE=auto go get
 
 # CRC (openshift)
-export PATH="~/.crc/bin:$PATH"
+export PATH="/home/edvin/.crc/bin:$PATH"
 
 # PYTHON bin path
-export PATH="~/.local/bin:$PATH"
+export PATH="/home/edvin/.local/bin:$PATH"
 
 # kubernetes krew
 
