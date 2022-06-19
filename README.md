@@ -3,7 +3,7 @@
 Starting on my dotfiles journey.
 This is a excellent blog if you also want to get [started](https://writingco.de/blog/how-i-manage-my-dotfiles-using-gnu-stow/)
 
-Then I add some ansible sprincle on the top
+Then I add some ansible sprinkle on top.
 
 ## submodules
 
@@ -50,7 +50,7 @@ ansible-playbook playbook.yml
 ```
 
 The ansible script will install lots of good tools.
-It will also set ZSH as your default shell. Remeber to login and out.
+It will also set ZSH as your default shell. Remember to login and out.
 
 ### zsh
 
