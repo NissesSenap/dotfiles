@@ -25,4 +25,4 @@ ssh-add -q -K $(pwd)/.ssh/id_rsa
 [ -d $(pwd)/.azure ] || mkdir $(pwd)/.azure # Store Azure CLI configuration here
 
 # use keychain
-eval $(keychain --eval $(pwd)/.ssh/id_rsa)
+eval $(keychain --eval --quiet $(pwd)/.ssh/id_rsa)
