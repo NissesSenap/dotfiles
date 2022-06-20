@@ -14,12 +14,15 @@ fi
 
 # Environment variables
 export KUBECONFIG=$(pwd)/.kube/config
-export GIT_SSH_COMMAND="ssh -i $(pwd)/.ssh/$(basename $(pwd))_id_rsa"
+export GIT_SSH_COMMAND="ssh -i $(pwd)/.ssh/id_rsa -o 'HostkeyAlgorithms=+ssh-rsa' -o 'PubkeyAcceptedKeyTypes=+ssh-rsa'"
 export AZURE_CONFIG_DIR=$(pwd)/.azure
 
-ssh-add -q $(pwd)/.ssh/$(basename $(pwd))_id_rsa
+ssh-add -q $(pwd)/.ssh/id_rsa
 
 # Configuration folders
 [ -d $(pwd)/.envrc_backups ] || mkdir $(pwd)/.envrc_backups # Store .envrc backups here
 [ -d $(pwd)/.kube ] || mkdir $(pwd)/.kube # Store Kubernetes (kubectl) configuration here
 [ -d $(pwd)/.azure ] || mkdir $(pwd)/.azure # Store Azure CLI configuration here
+
+# use keychain
+eval $(keychain --eval $(pwd)/.ssh/id_rsa)

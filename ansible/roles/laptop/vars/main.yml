@@ -17,6 +17,7 @@ fedoraPackages:
   - golang
   - podman-docker # it's a simple alias for docker
   - azure-cli
+  - keychain
 
 flatpacks:
   - com.slack.Slack
