@@ -219,7 +219,7 @@ function create-workspace() {
     mkdir -p ~/projects/xenit/$1/.ssh
     cd ~/projects/xenit/$1/.ssh
     ssh-keygen -b 4096 -t rsa -C $1 -f $1_id_rsa
-    cp ~/.create_workspace_envrc ~/projects/xenit/$1/.envrc
+    cp ~/projects/dotfiles/direnv/direnv/create_workspace.sh ~/projects/xenit/$1/.envrc
     direnv allow ~/projects/xenit/$1/.envrc
     cd ~/projects/xenit/$1
 }
