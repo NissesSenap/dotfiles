@@ -20,6 +20,7 @@ fedoraPackages:
 flatpacks:
   - com.slack.Slack
   - com.spotify.Client
+  - com.microsoft.Teams
 
 # arch-linux
 
