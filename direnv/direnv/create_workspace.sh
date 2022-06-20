@@ -17,7 +17,7 @@ export KUBECONFIG=$(pwd)/.kube/config
 export GIT_SSH_COMMAND="ssh -i $(pwd)/.ssh/id_rsa -o 'HostkeyAlgorithms=+ssh-rsa' -o 'PubkeyAcceptedKeyTypes=+ssh-rsa'"
 export AZURE_CONFIG_DIR=$(pwd)/.azure
 
-ssh-add -q $(pwd)/.ssh/id_rsa
+ssh-add -q -K $(pwd)/.ssh/id_rsa
 
 # Configuration folders
 [ -d $(pwd)/.envrc_backups ] || mkdir $(pwd)/.envrc_backups # Store .envrc backups here
