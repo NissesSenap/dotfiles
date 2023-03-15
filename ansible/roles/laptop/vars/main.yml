@@ -18,6 +18,8 @@ fedoraPackages:
   - azure-cli
   - keychain
   - python3-pip
+  - libxcrypt-compat #Needed for gcloud
+  - google-cloud-sdk-gke-gcloud-auth-plugin # Will install glouc as well
 
 flatpacks:
   - com.slack.Slack
