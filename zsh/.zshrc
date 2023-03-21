@@ -183,6 +183,9 @@ export PATH="/home/edvin/.crc/bin:$PATH"
 # PYTHON bin path
 export PATH="/home/edvin/.local/bin:$PATH"
 
+# buildkit enabled by default
+export DOCKER_BUILDKIT=1
+
 # kubernetes krew
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
