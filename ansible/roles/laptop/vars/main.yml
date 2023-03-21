@@ -15,7 +15,6 @@ fedoraPackages:
   - codium
   - termite
   - golang
-  - azure-cli
   - keychain
   - python3-pip
   - libxcrypt-compat #Needed for gcloud

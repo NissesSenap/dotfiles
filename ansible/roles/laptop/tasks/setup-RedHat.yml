@@ -32,20 +32,6 @@
     gpgkey: https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
 
 # Install codium aka vscode oss repo
-- name: az gpg
-  rpm_key:
-    key: https://packages.microsoft.com/keys/microsoft.asc
-    state: present
-
-- name: az cli repo
-  yum_repository:
-    name: az.repo
-    description: az cli
-    baseurl: https://packages.microsoft.com/yumrepos/azure-cli
-    gpgcheck: true
-    gpgkey: https://packages.microsoft.com/keys/microsoft.asc
-
-# Install codium aka vscode oss repo
 - name: google cli gpg
   rpm_key:
     key: https://packages.cloud.google.com/yum/doc/rpm-package-key.gpg
