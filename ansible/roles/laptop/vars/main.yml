@@ -19,6 +19,7 @@ fedoraPackages:
   - python3-pip
   - libxcrypt-compat #Needed for gcloud
   - google-cloud-sdk-gke-gcloud-auth-plugin # Will install glouc as well
+  - moby-engine
 
 flatpacks:
   - com.slack.Slack

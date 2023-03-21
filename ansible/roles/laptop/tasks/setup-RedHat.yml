@@ -50,3 +50,20 @@
   dnf:
     name: "{{ fedoraPackages }}"
     state: present
+
+# Disable SElLinux, I'm sorry
+- name: Disable SELinux
+  selinux:
+    state: disabled
+
+- name: Enable and start docker
+  ansible.builtin.systemd:
+    name: docker
+    enabled: true
+    state: started
+
+- name: adding existing user '{{ user }}' to group sudo
+  user:
+    name: "{{ user }}"
+    groups: docker
+    append: yes
