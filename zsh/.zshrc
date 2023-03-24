@@ -133,6 +133,7 @@ export SPACESHIP_PROMPT_ORDER=(
     # julia         # Julia section
     # docker        # Docker section
     # aws           # Amazon Web Services section
+	gcloud          # gcloud section
     venv          # virtualenv section
     # conda         # conda virtualenv section
     pyenv         # Pyenv section
