@@ -12,7 +12,7 @@ fedoraPackages:
   - util-linux-user
   - direnv
   - kubernetes-client
-  - codium
+  - code
   - termite
   - golang
   - keychain

@@ -17,19 +17,19 @@
   community.general.copr:
     name: skidnik/termite
 
-# Install codium aka vscode oss repo
-- name: codium gpg
+# Install vscode gpg repo
+- name: vscode gpg
   rpm_key:
-    key: https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
+    key: https://packages.microsoft.com/keys/microsoft.asc
     state: present
 
-- name: codium repo
+- name: vscode repo
   yum_repository:
-    name: vscodium.repo
-    description: VS codium aka vscode oss
-    baseurl: https://download.vscodium.com/rpms/
+    name: vscode.repo
+    description: Visual Studio Code
+    baseurl: https://packages.microsoft.com/yumrepos/vscode
     gpgcheck: true
-    gpgkey: https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/-/raw/master/pub.gpg
+    gpgkey: https://packages.microsoft.com/keys/microsoft.asc
 
 # Install codium aka vscode oss repo
 - name: google cli gpg
