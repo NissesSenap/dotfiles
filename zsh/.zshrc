@@ -164,7 +164,6 @@ export EDITOR=vim
 # My aliases
 alias cdp="cd ~/projects"
 alias cdg="cd ~/go/src/github.com/NissesSenap"
-alias code="codium"
 alias iw="init-workspace"
 
 #Yarn

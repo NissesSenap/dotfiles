@@ -137,7 +137,7 @@ Instead my plan is to write a simple script that I will run from time to time to
 # Create the backup
 code --list-extensions > vscode-extensions.list
 # To install on a new client
-cat vscode-extensions.list | xargs -L 1 codium --install-extension
+cat vscode-extensions.list | xargs -L 1 code --install-extension
 # It might have to say code or codium depending on os.
 ```
 
