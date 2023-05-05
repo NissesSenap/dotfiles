@@ -1,5 +1,6 @@
 {
     "editor.formatOnSave": true,
+    "editor.inlineSuggest.enabled": true,
     "python.formatting.provider": "black",
     "explorer.confirmDelete": false,
     "files.trimTrailingWhitespace": true,
