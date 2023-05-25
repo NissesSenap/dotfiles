@@ -23,4 +23,6 @@
     "files.associations": {
         "./ci/*": "azure-pipelines"
     },
+    "git.autofetch": true,
+    "markdown.marp.enableHtml": true,
 }
