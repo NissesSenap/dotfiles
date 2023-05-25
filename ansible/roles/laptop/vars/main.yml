@@ -24,7 +24,6 @@ fedoraPackages:
 flatpacks:
   - com.slack.Slack
   - com.spotify.Client
-  - com.jetbrains.IntelliJ-IDEA-Community
 
 # arch-linux
 
