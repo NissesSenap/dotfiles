@@ -157,6 +157,8 @@ export SPACESHIP_KUBECONTEXT_COLOR=166d75f00
 SPACESHIP_KUBECTL_SHOW=true
 SPACESHIP_KUBECONTEXT_SHOW=true
 SPACESHIP_KUBECTL_VERSION_SHOW=false
+# Disable the % of EOL in a partial line
+export PROMPT_EOL_MARK=''
 
 # Got to use vim as editor
 export EDITOR=vim
@@ -165,6 +167,7 @@ export EDITOR=vim
 alias cdp="cd ~/projects"
 alias cdg="cd ~/go/src/github.com/NissesSenap"
 alias iw="init-workspace"
+alias intel=/opt/idea-IC-231.9011.34/bin/idea.sh
 
 #Yarn
 PATH="$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin"
