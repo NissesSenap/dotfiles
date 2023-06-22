@@ -30,7 +30,6 @@ set scrolloff=999
 " set cursorline
 
 syntax enable
-colorscheme desert
 
 " Use Unix as the standard file type
 
