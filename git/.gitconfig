@@ -5,3 +5,5 @@
 	email = edvin.norling@kognic.com
 [init]
 	defaultBranch = main
+[push]
+	autoSetupRemote = true
