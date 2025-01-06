@@ -12,10 +12,10 @@
     method: system
   with_items: "{{ flatpacks }}"
 
-# Setup termite repo
-- name: Enable project Test of the user schlupov
+# Setup ghostty repo
+- name: Enable Ghostty repo
   community.general.copr:
-    name: skidnik/termite
+    name: pgdev/ghostty
 
 # Setup starship repo
 - name: Enable project starship

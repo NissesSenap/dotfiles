@@ -13,7 +13,6 @@ fedoraPackages:
   - direnv
   - kubernetes-client
   - code
-  - termite
   - golang
   - keychain
   - python3-pip
@@ -22,6 +21,7 @@ fedoraPackages:
   - moby-engine
   - cascadia-code-nf-fonts.noarch # Cascadia Code Nerd Font, needed for starship prompt
   - starship
+  - ghostty
 
 flatpacks:
   - com.slack.Slack
@@ -38,7 +38,6 @@ archPackages:
   - git
   - stow
   - vim
-  - termite
   - code
   - patch
   - cmake
