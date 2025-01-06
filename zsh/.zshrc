@@ -136,7 +136,7 @@ export SPACESHIP_PROMPT_ORDER=(
 	# gcloud          # gcloud section
     venv          # virtualenv section
     # conda         # conda virtualenv section
-    pyenv         # Pyenv section
+    #pyenv         # Pyenv section
     # dotnet        # .NET section
     # ember         # Ember.js section
     kubectl        # Kubectl context section
@@ -144,7 +144,7 @@ export SPACESHIP_PROMPT_ORDER=(
     # exec_time     # Execution time
     line_sep      # Line break
     # battery       # Battery level and status
-    vi_mode       # Vi-mode indicator
+    #vi_mode       # Vi-mode indicator
     # jobs          # Background jobs indicator
     exit_code     # Exit code section
     char          # Prompt character
