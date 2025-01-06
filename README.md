@@ -23,16 +23,6 @@ ansible-galaxy collection install community.general
 
 ```
 
-#### termite
-
-Copr is now supported by ansible and termite is installed automatically.
-Earlier you had to write.
-
-```bash
-sudo dnf copr enable skidnik/termite
-sudo dnf install termite
-```
-
 ### Arche
 
 ```bash
@@ -98,7 +88,7 @@ gsettings set org.gnome.desktop.peripherals.touchpad natural-scroll false
 ```bash
 name="termite"
 binding="<CTRL><ALT>t"
-action="termite"
+action="ghostty"
 
 media_keys=org.gnome.settings-daemon.plugins.media-keys
 custom_kbd=org.gnome.settings-daemon.plugins.media-keys.custom-keybinding

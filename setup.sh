@@ -15,7 +15,7 @@ useronly=(
     zsh
     completion
     vim
-    termite
+    ghostty
     vscode
     direnv
 )
