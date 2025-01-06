@@ -17,6 +17,11 @@
   community.general.copr:
     name: skidnik/termite
 
+# Setup starship repo
+- name: Enable project starship
+  community.general.copr:
+    name: atim/starship
+
 # Install vscode gpg repo
 - name: vscode gpg
   rpm_key:

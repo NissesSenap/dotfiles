@@ -20,6 +20,8 @@ fedoraPackages:
   - libxcrypt-compat #Needed for gcloud
   - google-cloud-sdk-gke-gcloud-auth-plugin # Will install glouc as well
   - moby-engine
+  - cascadia-code-nf-fonts.noarch # Cascadia Code Nerd Font, needed for starship prompt
+  - starship
 
 flatpacks:
   - com.slack.Slack
