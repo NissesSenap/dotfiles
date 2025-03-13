@@ -166,8 +166,8 @@ export EDITOR=vim
 # My aliases
 alias cdp="cd ~/projects"
 alias cdg="cd ~/go/src/github.com/NissesSenap"
-alias iw="init-workspace"
 alias intel=/opt/idea-IC-231.9011.34/bin/idea.sh
+alias code=code-insiders
 
 #Yarn
 PATH="$PATH:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin"
@@ -197,24 +197,8 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 export PATH=$PATH:"/usr/local/kubebuilder/bin"
 
-# init workspace
-init-workspace() {
-    curr_path=$(pwd)
-    new_path=$(realpath ~/projects/xenit/$1)
-
-    if [[ ! $curr_path =~ $new_path ]]; then
-        ~/projects/xenit/$1
-    fi
-}
-
-# Create Workspace function
-function create-workspace() {
-    mkdir -p ~/projects/xenit/$1/.ssh
-    cd ~/projects/xenit/$1/.ssh
-    ssh-keygen -b 4096 -t rsa -C $1 -f id_rsa
-    cp ~/projects/dotfiles/direnv/direnv/create_workspace.sh ~/projects/xenit/$1/.envrc
-    direnv allow ~/projects/xenit/$1/.envrc
-    cd ~/projects/xenit/$1
+cheat () {
+	curl cht.sh/$1
 }
 
 # source tkn zsh completion
