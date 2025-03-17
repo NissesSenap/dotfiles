@@ -3,9 +3,35 @@
 # Please adapt and uncomment the following lines:
 	name = Edvin Norling
 	email = edvin.norling@kognic.com
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
 [init]
 	defaultBranch = main
 [push]
 	autoSetupRemote = true
+    default = simple
+    followTags = true
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[diff]
+	algorithm = histogram
+	colorMoved = plain
+	mnemonicPrefix = true
+	renames = true
+[help]
+	autocorrect = prompt
+[commit]
+	verbose = true
+[rerere]
+	enabled = true
+	autoupdate = true
+[pull]
+    rebase = true
